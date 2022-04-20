@@ -9,7 +9,6 @@ jobs:
   publish-extension:
     name: Build extension and Push image to DockerHub
     runs-on: ubuntu-latest
-    timeout-minutes: 10
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
