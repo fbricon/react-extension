@@ -1,4 +1,4 @@
-IMAGE?=desktop-react-extension
+IMAGE?=fbricon/desktop-react-extension
 TAG?=latest
 
 BUILDER=buildx-multi-arch
