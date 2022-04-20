@@ -5,6 +5,7 @@ COPY client/package.json /app/client/package.json
 COPY client/yarn.lock /app/client/yarn.lock
 ARG TARGETARCH
 RUN yarn config set cache-folder /usr/local/share/.cache/yarn-${TARGETARCH}
+RUN yarn config set network-timeout 120000
 RUN --mount=type=cache,target=/usr/local/share/.cache/yarn-${TARGETARCH} yarn
 # install
 COPY client /app/client
